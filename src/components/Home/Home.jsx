@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { getUsers } from "../../redux/actions";
 import Card from "../Card/Card";
 
@@ -11,6 +11,8 @@ export default function Home() {
     useEffect(() => {
         dispatch(getUsers());
     }, [dispatch])
+
+    console.log("ALLUSERS FROM HOME", allUsers)
 
     return (
         <div>

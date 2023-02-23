@@ -1,4 +1,4 @@
-import { GET_USERS } from "./constant"
+import { SET_USERS } from "./constant"
 
 const initialState = {
     users: []
@@ -6,7 +6,7 @@ const initialState = {
 
 export const usersData = (state = initialState, action) => {
     switch (action.type) {
-        case GET_USERS:
+        case SET_USERS:
             return {
                 ...state,
                 users: action.payload
