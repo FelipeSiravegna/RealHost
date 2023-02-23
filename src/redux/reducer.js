@@ -1,15 +1,15 @@
-import { GET_CHARACTERS } from "./constant"
+import { GET_USERS } from "./constant"
 
 const initialState = {
-    characters: []
+    users: []
 }
 
-export const charactersData = (state = initialState, action) => {
+export const usersData = (state = initialState, action) => {
     switch (action.type) {
-        case GET_CHARACTERS:
+        case GET_USERS:
             return {
                 ...state,
-                characters: action.payload
+                users: action.payload
             };
         default:
             return state;

@@ -1,1 +1,1 @@
-export const GET_CHARACTERS = "GET_CHARACTERS"
+export const GET_USERS = "GET_USERS"
