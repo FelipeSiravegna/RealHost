@@ -12,8 +12,6 @@ export default function Home() {
         dispatch(getUsers());
     }, [dispatch])
 
-    console.log("ALLUSERS FROM HOME", allUsers)
-
     return (
         <div>
             {
